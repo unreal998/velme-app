@@ -1,10 +1,13 @@
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View } from 'react-native';
+import { Wrapper } from '@googlemaps/react-wrapper';
+import { GOOGLE_MAP_KEY } from './constants.js';
 
 export default function App() {
   return (
     <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
+      <Wrapper apiKey={GOOGLE_MAP_KEY}>
+      </Wrapper>
       <StatusBar style="auto" />
     </View>
   );
